@@ -4,166 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | iOS Developer</title>
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f7f8fa;
-            color: #333;
+            background-color: #f2f2f2;
+            color: #222;
         }
 
         header {
-            background: linear-gradient(135deg, #3f87ff, #6fb1ff);
-            color: white;
-            padding: 60px 20px;
+            background-color: #1f1f1f;
+            color: #f5f5f5;
+            padding: 70px 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
             font-size: 2.6em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.15em;
+            max-width: 800px;
+            margin: 18px auto 0;
+            color: #cccccc;
+            line-height: 1.6;
         }
 
         section {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 50px auto;
             padding: 0 20px;
         }
 
         h2 {
-            border-bottom: 2px solid #3f87ff;
-            padding-bottom: 6px;
-            margin-bottom: 20px;
-            color: #3f87ff;
+            color: #111;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         .project {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 26px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
         }
 
         .project h3 {
             margin-top: 0;
+            font-weight: 600;
         }
 
         .project p {
-            line-height: 1.6;
+            line-height: 1.65;
+            color: #333;
         }
 
         .project a {
             display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #3f87ff;
+            margin-top: 16px;
             font-weight: 600;
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid #111;
+        }
+
+        .screens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .screens img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.18);
         }
 
         footer {
             text-align: center;
-            padding: 30px 20px;
-            background-color: #eee;
+            padding: 40px 20px;
+            background-color: #1f1f1f;
+            color: #aaa;
             font-size: 0.9em;
-            color: #666;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>iOS Developer Portfolio</h1>
     <p>
-        iOS developer focused on clean SwiftUI architecture, real-world apps,
-        Firebase & Stripe integrations, and intuitive user experience.
+        iOS developer focused on SwiftUI, clean architecture,
+        and building practical, real-world applications
+        with Firebase and Stripe integrations.
     </p>
 </header>
 
 <section>
     <h2>Featured Projects</h2>
 
+    <!-- Spelling Words -->
     <div class="project">
         <h3>Spelling Words</h3>
         <p>
-            An educational iOS app designed to help children practice spelling words
-            in a simple and engaging way. The app focuses on clarity, repetition,
-            and ease of daily practice.
+            An educational iOS app designed to help children practice spelling
+            through repetition and a clean, distraction-free interface.
         </p>
-        <p>
-            <strong>Technologies:</strong> SwiftUI, local persistence, clean UI/UX
-        </p>
+        <p><strong>Technologies:</strong> SwiftUI, local persistence, clean UI/UX</p>
+
+        <h4>App Screens</h4>
+        <div class="screens">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen1.jpg">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen2.jpg">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen3.jpg">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen4.jpg">
+        </div>
+
         <a href="https://ihordolhalov1.github.io/Spelling/" target="_blank">
             View project page →
         </a>
     </div>
 
+    <!-- St Pirans Society -->
     <div class="project">
         <h3>St Pirans Society</h3>
         <p>
-            A mobile application for St Pirans Society, aimed at simplifying
-            the process of purchasing tickets and ordering snacks for school events.
-            The app reduces manual administration and improves the experience
-            for parents and organizers.
+            A mobile application for a school charity society,
+            simplifying ticket purchases and snack orders
+            for school events.
         </p>
-        <p>
-            <strong>Technologies:</strong> SwiftUI, Firebase, Stripe payments
-        </p>
+        <p><strong>Technologies:</strong> SwiftUI, Firebase, Stripe</p>
+
+        <h4>App Screens</h4>
+        <div class="screens">
+            <img src="stpirans/screen1.jpg">
+            <img src="stpirans/screen2.jpg">
+            <img src="stpirans/screen3.jpg">
+            <img src="stpirans/screen4.jpg">
+        </div>
+
         <a href="https://apps.apple.com/ua/app/stpirans-society/id6742148203" target="_blank">
             View on App Store →
         </a>
     </div>
 
+    <!-- Apartament1 -->
     <div class="project">
         <h3>Apartament1 Restaurant</h3>
         <p>
-            A restaurant application for Apartament1 in Cluj-Napoca.
-            Users can browse the menu, make reservations,
-            and receive notifications about updates and special offers.
+            A restaurant application that allows users to browse the menu,
+            make reservations, and receive notifications.
         </p>
-        <p>
-            <strong>Technologies:</strong> SwiftUI, notifications, backend integration
-        </p>
+        <p><strong>Technologies:</strong> SwiftUI, notifications, backend integration</p>
+
+        <h4>App Screens</h4>
+        <div class="screens">
+            <img src="apartament1/screen1.jpg">
+            <img src="apartament1/screen2.jpg">
+            <img src="apartament1/screen3.jpg">
+            <img src="apartament1/screen4.jpg">
+        </div>
+
         <a href="https://apps.apple.com/ua/app/apartament1/id6503643495" target="_blank">
             View on App Store →
         </a>
     </div>
 
+    <!-- Personal Planner -->
     <div class="project">
         <h3>Personal Planner</h3>
         <p>
-            A lightweight personal planner and to-do app.
-            Users can organize daily tasks and personalize the app
-            by adding a photo of someone dear, making planning more personal.
+            A lightweight to-do planner focused on simplicity
+            and personalisation with photos.
         </p>
-        <p>
-            <strong>Technologies:</strong> SwiftUI, local storage, user personalization
-        </p>
+        <p><strong>Technologies:</strong> SwiftUI, local storage</p>
+
+        <h4>App Screens</h4>
+        <div class="screens">
+            <img src="planner/screen1.jpg">
+            <img src="planner/screen2.jpg">
+            <img src="planner/screen3.jpg">
+            <img src="planner/screen4.jpg">
+        </div>
+
         <a href="https://apps.apple.com/ua/app/personal-planner/id6473802995" target="_blank">
             View on App Store →
         </a>
     </div>
+
 </section>
 
 <section>
     <h2>About Me</h2>
     <p>
-        I specialize in building practical iOS applications that solve real problems.
-        My experience includes educational apps, charity and school systems,
-        restaurant apps, and personal productivity tools.
-    </p>
-    <p>
-        I value clean architecture, predictable business logic,
+        I build iOS applications focused on clarity, reliability,
         and long-term maintainability.
+        My experience includes educational apps, charity platforms,
+        restaurant apps, and personal productivity tools.
     </p>
 </section>
 
