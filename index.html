@@ -2,99 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Portfolio – iOS Applications</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | iOS Developer</title>
 
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            background-color: #f2f2f2;
-            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #111;
+            color: #e0e0e0;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #1f1f1f;
-            color: #f5f5f5;
-            padding: 70px 20px;
+            padding: 40px 20px;
             text-align: center;
+            border-bottom: 1px solid #2a2a2a;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.6em;
+            font-size: 32px;
             font-weight: 600;
-            letter-spacing: 0.5px;
         }
 
         header p {
-            font-size: 1.15em;
-            max-width: 800px;
-            margin: 18px auto 0;
-            color: #cccccc;
-            line-height: 1.6;
+            margin-top: 10px;
+            color: #aaa;
+            font-size: 16px;
         }
 
         section {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            border-bottom: 1px solid #2a2a2a;
         }
 
         h2 {
-            color: #111;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 8px;
-            margin-bottom: 30px;
-            font-weight: 600;
+            font-size: 26px;
+            margin-bottom: 10px;
         }
 
-        .project {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 26px;
-            margin-bottom: 40px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        .description {
+            color: #bdbdbd;
+            max-width: 800px;
+            margin-bottom: 20px;
         }
 
-        .project h3 {
-            margin-top: 0;
-            font-weight: 600;
-        }
-
-        .project p {
-            line-height: 1.65;
-            color: #333;
-        }
-
-        .project a {
-            display: inline-block;
-            margin-top: 16px;
-            font-weight: 600;
-            color: #111;
+        .links a {
+            color: #9aa3ff;
             text-decoration: none;
-            border-bottom: 1px solid #111;
+            margin-right: 15px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
         }
 
         .screens {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 18px;
-            margin-top: 18px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
         }
 
         .screens img {
             width: 100%;
-            border-radius: 14px;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+            border-radius: 12px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .screens a:hover img {
+            transform: scale(1.04);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            background-color: #1f1f1f;
-            color: #aaa;
-            font-size: 0.9em;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -102,120 +90,107 @@
 <body>
 
 <header>
-    <h1>iOS Developer Portfolio</h1>
-    <p>
-        iOS developer focused on SwiftUI, clean architecture,
-        and building practical, real-world applications
-        with Firebase and Stripe integrations.
-    </p>
+    <h1>iOS App Portfolio</h1>
+    <p>SwiftUI • Firebase • Stripe • Product-focused development</p>
 </header>
 
+<!-- Spelling Words -->
 <section>
-    <h2>Featured Projects</h2>
+    <h2>Spelling Words</h2>
+    <p class="description">
+        An educational iOS app designed to help children practice spelling through a clean,
+        distraction-free interface with visual support.
+    </p>
 
-    <!-- Spelling Words -->
-    <div class="project">
-        <h3>Spelling Words</h3>
-        <p>
-            An educational iOS app designed to help children practice spelling
-            through repetition and a clean, distraction-free interface.
-        </p>
-        <p><strong>Technologies:</strong> SwiftUI, local persistence, clean UI/UX</p>
-
-        <h4>App Screens</h4>
-        <div class="screens">
-            <img src="https://ihordolhalov1.github.io/Spelling/screen1.jpg">
-            <img src="https://ihordolhalov1.github.io/Spelling/screen2.jpg">
-            <img src="https://ihordolhalov1.github.io/Spelling/screen3.jpg">
-            <img src="https://ihordolhalov1.github.io/Spelling/screen4.jpg">
-        </div>
-
-        <a href="https://ihordolhalov1.github.io/Spelling/" target="_blank">
-            View project page →
-        </a>
+    <div class="links">
+        <a href="https://ihordolhalov1.github.io/Spelling/" target="_blank">Project page</a>
+        <a href="https://apps.apple.com" target="_blank">App Store</a>
     </div>
 
-    <!-- St Pirans Society -->
-    <div class="project">
-        <h3>St Pirans Society</h3>
-        <p>
-            A mobile application for a school charity society,
-            simplifying ticket purchases and snack orders
-            for school events.
-        </p>
-        <p><strong>Technologies:</strong> SwiftUI, Firebase, Stripe</p>
-
-        <h4>App Screens</h4>
-        <div class="screens">
-            <img src="stpirans/screen1.jpg">
-            <img src="stpirans/screen2.jpg">
-            <img src="stpirans/screen3.jpg">
-            <img src="stpirans/screen4.jpg">
-        </div>
-
-        <a href="https://apps.apple.com/ua/app/stpirans-society/id6742148203" target="_blank">
-            View on App Store →
+    <div class="screens">
+        <a href="https://ihordolhalov1.github.io/Spelling/screen1.jpg" target="_blank">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen1.jpg" alt="">
+        </a>
+        <a href="https://ihordolhalov1.github.io/Spelling/screen2.jpg" target="_blank">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen2.jpg" alt="">
+        </a>
+        <a href="https://ihordolhalov1.github.io/Spelling/screen3.jpg" target="_blank">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen3.jpg" alt="">
+        </a>
+        <a href="https://ihordolhalov1.github.io/Spelling/screen4.jpg" target="_blank">
+            <img src="https://ihordolhalov1.github.io/Spelling/screen4.jpg" alt="">
         </a>
     </div>
-
-    <!-- Apartament1 -->
-    <div class="project">
-        <h3>Apartament1 Restaurant</h3>
-        <p>
-            A restaurant application that allows users to browse the menu,
-            make reservations, and receive notifications.
-        </p>
-        <p><strong>Technologies:</strong> SwiftUI, notifications, backend integration</p>
-
-        <h4>App Screens</h4>
-        <div class="screens">
-            <img src="apartament1/screen1.jpg">
-            <img src="apartament1/screen2.jpg">
-            <img src="apartament1/screen3.jpg">
-            <img src="apartament1/screen4.jpg">
-        </div>
-
-        <a href="https://apps.apple.com/ua/app/apartament1/id6503643495" target="_blank">
-            View on App Store →
-        </a>
-    </div>
-
-    <!-- Personal Planner -->
-    <div class="project">
-        <h3>Personal Planner</h3>
-        <p>
-            A lightweight to-do planner focused on simplicity
-            and personalisation with photos.
-        </p>
-        <p><strong>Technologies:</strong> SwiftUI, local storage</p>
-
-        <h4>App Screens</h4>
-        <div class="screens">
-            <img src="planner/screen1.jpg">
-            <img src="planner/screen2.jpg">
-            <img src="planner/screen3.jpg">
-            <img src="planner/screen4.jpg">
-        </div>
-
-        <a href="https://apps.apple.com/ua/app/personal-planner/id6473802995" target="_blank">
-            View on App Store →
-        </a>
-    </div>
-
 </section>
 
+<!-- St Pirans Society -->
 <section>
-    <h2>About Me</h2>
-    <p>
-        I build iOS applications focused on clarity, reliability,
-        and long-term maintainability.
-        My experience includes educational apps, charity platforms,
-        restaurant apps, and personal productivity tools.
+    <h2>St Pirans Society</h2>
+    <p class="description">
+        Mobile application for St Pirans Society aimed at simplifying ticket purchases
+        and snack ordering for school events. Integrated with Stripe and Firebase.
     </p>
+
+    <div class="links">
+        <a href="https://apps.apple.com/ua/app/stpirans-society/id6742148203" target="_blank">
+            App Store
+        </a>
+    </div>
+
+    <div class="screens">
+        <a href="stpirans/screen1.jpg" target="_blank"><img src="stpirans/screen1.jpg"></a>
+        <a href="stpirans/screen2.jpg" target="_blank"><img src="stpirans/screen2.jpg"></a>
+        <a href="stpirans/screen3.jpg" target="_blank"><img src="stpirans/screen3.jpg"></a>
+        <a href="stpirans/screen4.jpg" target="_blank"><img src="stpirans/screen4.jpg"></a>
+    </div>
+</section>
+
+<!-- Apartament1 -->
+<section>
+    <h2>Apartament1 Restaurant</h2>
+    <p class="description">
+        Restaurant app for Apartament1 in Cluj-Napoca.
+        Users can browse the menu, make reservations and receive notifications.
+    </p>
+
+    <div class="links">
+        <a href="https://apps.apple.com/ua/app/apartament1/id6503643495" target="_blank">
+            App Store
+        </a>
+    </div>
+
+    <div class="screens">
+        <a href="apartament1/screen1.jpg" target="_blank"><img src="apartament1/screen1.jpg"></a>
+        <a href="apartament1/screen2.jpg" target="_blank"><img src="apartament1/screen2.jpg"></a>
+        <a href="apartament1/screen3.jpg" target="_blank"><img src="apartament1/screen3.jpg"></a>
+        <a href="apartament1/screen4.jpg" target="_blank"><img src="apartament1/screen4.jpg"></a>
+    </div>
+</section>
+
+<!-- Personal Planner -->
+<section>
+    <h2>Personal Planner</h2>
+    <p class="description">
+        A simple personal planner and to-do organizer with the option
+        to personalize tasks using photos of loved ones.
+    </p>
+
+    <div class="links">
+        <a href="https://apps.apple.com/ua/app/personal-planner/id6473802995" target="_blank">
+            App Store
+        </a>
+    </div>
+
+    <div class="screens">
+        <a href="planner/screen1.jpg" target="_blank"><img src="planner/screen1.jpg"></a>
+        <a href="planner/screen2.jpg" target="_blank"><img src="planner/screen2.jpg"></a>
+        <a href="planner/screen3.jpg" target="_blank"><img src="planner/screen3.jpg"></a>
+        <a href="planner/screen4.jpg" target="_blank"><img src="planner/screen4.jpg"></a>
+    </div>
 </section>
 
 <footer>
-    © 2026 · iOS Developer Portfolio · Built with GitHub Pages
+    © 2026 • iOS Developer Portfolio
 </footer>
 
 </body>
